@@ -36,17 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		046B58F52223E7EA0032E801 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
-		046B58F62223E7EA0032E801 /* UIView+MLBLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MLBLayout.m"; sourceTree = "<group>"; };
-		046B58F72223E7EA0032E801 /* MHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHeader.h; sourceTree = "<group>"; };
-		046B58F82223E7EA0032E801 /* MConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MConfig.h; sourceTree = "<group>"; };
-		046B58F92223E7EA0032E801 /* AppDelegate+MConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+MConfig.h"; sourceTree = "<group>"; };
-		046B58FA2223E7EA0032E801 /* UIView+MLBLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MLBLayout.h"; sourceTree = "<group>"; };
-		046B58FB2223E7EA0032E801 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		046B58FC2223E7EA0032E801 /* MConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MConfig.m; sourceTree = "<group>"; };
-		046B58FD2223E7EA0032E801 /* MBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@2x.png"; sourceTree = "<group>"; };
-		046B58FE2223E7EA0032E801 /* AppDelegate+MConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+MConfig.m"; sourceTree = "<group>"; };
-		046B58FF2223E7EA0032E801 /* MBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@3x.png"; sourceTree = "<group>"; };
+		046B59042223F5610032E801 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		046B59052223F5610032E801 /* UIView+MLBLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MLBLayout.m"; sourceTree = "<group>"; };
+		046B59062223F5610032E801 /* MHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHeader.h; sourceTree = "<group>"; };
+		046B59072223F5610032E801 /* ConfigSingle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigSingle.m; sourceTree = "<group>"; };
+		046B59082223F5610032E801 /* MConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MConfig.h; sourceTree = "<group>"; };
+		046B59092223F5610032E801 /* UIView+MLBLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MLBLayout.h"; sourceTree = "<group>"; };
+		046B590A2223F5610032E801 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		046B590B2223F5610032E801 /* MConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MConfig.m; sourceTree = "<group>"; };
+		046B590C2223F5610032E801 /* ConfigSingle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigSingle.h; sourceTree = "<group>"; };
+		046B590D2223F5610032E801 /* MBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@2x.png"; sourceTree = "<group>"; };
+		046B590E2223F5610032E801 /* MBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@3x.png"; sourceTree = "<group>"; };
 		05E42821ACEF6E61DC942AC5D1BBBBF5 /* Pods-MLBNavigation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBNavigation_Tests-resources.sh"; sourceTree = "<group>"; };
 		07F1520CB5754C9F86E77700D41C63CA /* Pods-MLBNavigation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBNavigation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		096C72DA5BE1F8E952A2B3713AE1F323 /* Pods-MLBNavigation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLBNavigation_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -111,20 +111,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		046B58F42223E7EA0032E801 /* MNavigation */ = {
+		046B59032223F5610032E801 /* MNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				046B58F52223E7EA0032E801 /* BaseController.m */,
-				046B58F62223E7EA0032E801 /* UIView+MLBLayout.m */,
-				046B58F72223E7EA0032E801 /* MHeader.h */,
-				046B58F82223E7EA0032E801 /* MConfig.h */,
-				046B58F92223E7EA0032E801 /* AppDelegate+MConfig.h */,
-				046B58FA2223E7EA0032E801 /* UIView+MLBLayout.h */,
-				046B58FB2223E7EA0032E801 /* BaseController.h */,
-				046B58FC2223E7EA0032E801 /* MConfig.m */,
-				046B58FD2223E7EA0032E801 /* MBack@2x.png */,
-				046B58FE2223E7EA0032E801 /* AppDelegate+MConfig.m */,
-				046B58FF2223E7EA0032E801 /* MBack@3x.png */,
+				046B59062223F5610032E801 /* MHeader.h */,
+				046B59082223F5610032E801 /* MConfig.h */,
+				046B590B2223F5610032E801 /* MConfig.m */,
+				046B590C2223F5610032E801 /* ConfigSingle.h */,
+				046B59072223F5610032E801 /* ConfigSingle.m */,
+				046B590A2223F5610032E801 /* BaseController.h */,
+				046B59042223F5610032E801 /* BaseController.m */,
+				046B59092223F5610032E801 /* UIView+MLBLayout.h */,
+				046B59052223F5610032E801 /* UIView+MLBLayout.m */,
+				046B590D2223F5610032E801 /* MBack@2x.png */,
+				046B590E2223F5610032E801 /* MBack@3x.png */,
 			);
 			name = MNavigation;
 			path = MLBNavigation/Classes/MNavigation;
@@ -143,7 +143,7 @@
 		1F8EAC7D87B24875F1C3755B909E792F /* MLBNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				046B58F42223E7EA0032E801 /* MNavigation */,
+				046B59032223F5610032E801 /* MNavigation */,
 				9FE7E0FE12DF28EB2EBBB12BA7A44F85 /* Pod */,
 				8E060796B21C34D8023EDD4B7A2C5640 /* Support Files */,
 			);

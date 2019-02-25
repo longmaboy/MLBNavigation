@@ -7,7 +7,7 @@
 //
 
 #import "BaseController.h"
-#import "AppDelegate+MConfig.h"
+#import "ConfigSingle.h"
 #import "MConfig.h"
 
 @interface BaseController ()
@@ -38,7 +38,7 @@
         
         [self.navigationController.navigationBar setHidden:YES];
         
-        self.config = ((AppDelegate *)[UIApplication sharedApplication].delegate).config;
+        self.config = [ConfigSingle single].config;
 
         self.titleString = self.navigationItem.title;
 

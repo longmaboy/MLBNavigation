@@ -1,17 +1,19 @@
 //
-//  AppDelegate+MConfig.h
-//  MNavigation
+//  ConfigSingle.h
+//  MLBNavigation
 //
 //  Created by Mac on 2019/2/25.
 //  Copyright © 2019年 MLBiMAC. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import <Foundation/Foundation.h>
 #import "MConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AppDelegate (MConfig)
+@interface ConfigSingle : NSObject
+
++ (ConfigSingle *)single;
 
 @property (nonatomic, strong) MConfig *config;
 
