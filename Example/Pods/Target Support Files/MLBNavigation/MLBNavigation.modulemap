@@ -1,0 +1,6 @@
+framework module MLBNavigation {
+  umbrella header "MLBNavigation-umbrella.h"
+
+  export *
+  module * { export * }
+}

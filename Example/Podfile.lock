@@ -1,0 +1,16 @@
+PODS:
+  - MLBNavigation (0.1.0)
+
+DEPENDENCIES:
+  - MLBNavigation (from `../`)
+
+EXTERNAL SOURCES:
+  MLBNavigation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLBNavigation: c524ebecb0b82d54a8492f4bc7b0463ceab9e142
+
+PODFILE CHECKSUM: fafc780c16b8a146dadde43fa86fa71a83e0ed8e
+
+COCOAPODS: 1.5.3
