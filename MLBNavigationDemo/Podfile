@@ -5,5 +5,5 @@ inhibit_all_warnings! #忽略第三方的警告
 target :MLBNavigationDemo do
 
     pod 'MLBNavigation'
-    
+
 end

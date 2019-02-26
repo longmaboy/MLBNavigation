@@ -26,7 +26,7 @@
     
     [self setRightItemImg:[UIImage imageNamed:@"tab_home"] withWidth:40];
     
-    self.itemRightSpace = 6;
+    self.itemRightSpace = 0;
     
     self.naviBgColor = RGB(20, 182, 200, 1);
     

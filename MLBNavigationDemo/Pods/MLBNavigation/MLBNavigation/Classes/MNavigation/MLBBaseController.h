@@ -47,8 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *titleColor;
 
 //设置titleView，view需要宽度和高度，高度不要超过44
-- (void)setTitleView:(UIView *)view;
-
+@property (nonatomic, strong) UIView *titleView;
 
 
 
@@ -82,8 +81,8 @@ NS_ASSUME_NONNULL_BEGIN
 //右边item字体大小
 @property (nonatomic, strong) UIFont *rightFontSize;
 
-//设置rightView，rightView需要宽度和高度，高度不要超过44
 @property (nonatomic, strong) UIView *rightView;
+
 
 //设置右边按钮文字，需要根据字数设置宽度
 - (void)setRightItemText:(NSString *)rightItemText withTextColor:(UIColor *)color  withWidth:(CGFloat)buttonWidth;
