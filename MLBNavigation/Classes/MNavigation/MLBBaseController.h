@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MLBHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

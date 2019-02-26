@@ -46,13 +46,13 @@
 		046B59092223F5610032E801 /* UIView+MLBLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MLBLayout.h"; sourceTree = "<group>"; };
 		046B590D2223F5610032E801 /* MBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@2x.png"; sourceTree = "<group>"; };
 		046B590E2223F5610032E801 /* MBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@3x.png"; sourceTree = "<group>"; };
-		04C37E072224CB4900A70F30 /* MLBHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBHeader.h; sourceTree = "<group>"; };
 		04C37E082224CBAC00A70F30 /* MLBConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBConfig.h; sourceTree = "<group>"; };
 		04C37E092224CBAC00A70F30 /* MLBConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBConfig.m; sourceTree = "<group>"; };
 		04C37E0C2224CBE500A70F30 /* MLBConfigSingle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBConfigSingle.h; sourceTree = "<group>"; };
 		04C37E0D2224CBE500A70F30 /* MLBConfigSingle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBConfigSingle.m; sourceTree = "<group>"; };
 		04C37E102224CC2600A70F30 /* MLBBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBBaseController.h; sourceTree = "<group>"; };
 		04C37E112224CC2600A70F30 /* MLBBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBBaseController.m; sourceTree = "<group>"; };
+		04C37E152224D8BB00A70F30 /* MLBNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBNavigation.h; sourceTree = "<group>"; };
 		05E42821ACEF6E61DC942AC5D1BBBBF5 /* Pods-MLBNavigation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBNavigation_Tests-resources.sh"; sourceTree = "<group>"; };
 		07F1520CB5754C9F86E77700D41C63CA /* Pods-MLBNavigation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBNavigation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		096C72DA5BE1F8E952A2B3713AE1F323 /* Pods-MLBNavigation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLBNavigation_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		046B59032223F5610032E801 /* MNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				04C37E072224CB4900A70F30 /* MLBHeader.h */,
+				04C37E152224D8BB00A70F30 /* MLBNavigation.h */,
 				04C37E082224CBAC00A70F30 /* MLBConfig.h */,
 				04C37E092224CBAC00A70F30 /* MLBConfig.m */,
 				04C37E0C2224CBE500A70F30 /* MLBConfigSingle.h */,

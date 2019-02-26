@@ -8,6 +8,18 @@
 #import "MLBBaseController.h"
 #import "MLBConfigSingle.h"
 #import "MLBConfig.h"
+#import "UIView+MLBLayout.h"
+
+/** 屏幕宽高 */
+#define kScreenW_m    [UIScreen mainScreen].bounds.size.width
+#define kScreenH_m    [UIScreen mainScreen].bounds.size.height
+
+/** 导航栏高度和导航栏、tab变化值 */
+#define kTabbarIncrease_m  (kScreenH >= 812 ? 34 : 0)
+#define kNaviIncrease_m    (kScreenH >= 812 ? 24 : 0)
+#define kStatusHeight_m    [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNaviHeight_m      (kStatusHeight+44)
+#define kTabbarHeight_m    (kTabbarIncrease+49)
 
 @interface MLBBaseController ()
 
@@ -58,7 +70,7 @@
 - (UIView *)naviView
 {
     if (!_naviView) {
-        _naviView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kStatusHeight+44)];
+        _naviView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW_m, kStatusHeight_m+44)];
         _naviView.backgroundColor = self.config.naviBgColor ? self.config.naviBgColor : UIColor.whiteColor;
         
         [_naviView addSubview:self.naviImgView];
@@ -78,7 +90,7 @@
 - (UIImageView *)naviImgView
 {
     if (!_naviImgView) {
-        _naviImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kStatusHeight+44)];
+        _naviImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenW_m, kStatusHeight_m+44)];
         //设置默认图片
         _naviImgView.image = self.config.naviBgImg? [UIImage imageNamed:self.config.naviBgImg] : nil;
         _naviImgView.hidden = self.config.naviBgImg? NO : YES;
@@ -90,7 +102,7 @@
 - (UIView *)lineView
 {
     if (!_lineView) {
-        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, _naviView.m_height-0.5, kScreenW, 0.5)];
+        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, _naviView.m_height-0.5, kScreenW_m, 0.5)];
         _lineView.backgroundColor = UIColor.grayColor;
         _lineView.alpha = 0.5;
         _lineView.hidden = self.config.lineHidden;
@@ -102,7 +114,7 @@
 - (UIButton *)leftButton
 {
     if (!_leftButton) {
-        _leftButton = [[UIButton alloc] initWithFrame:CGRectMake(self.config.itemLeftSpace? self.config.itemLeftSpace:4, kStatusHeight+2, 40, 40)];
+        _leftButton = [[UIButton alloc] initWithFrame:CGRectMake(self.config.itemLeftSpace? self.config.itemLeftSpace:4, kStatusHeight_m+2, 40, 40)];
         [_leftButton setImage:[UIImage imageNamed:self.config.leftItemImg ? self.config.leftItemImg : @"MBack"] forState:UIControlStateNormal];
         [_leftButton addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         _leftButton.titleLabel.font = self.config.leftFontSize? self.config.leftFontSize : [UIFont systemFontOfSize:17];
@@ -113,8 +125,8 @@
 - (UIButton *)rightButton
 {
     if (!_rightButton) {
-        _rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, kStatusHeight+2, 50, 40)];
-        _rightButton.m_right = kScreenW - (self.config.itemRightSpace? self.config.itemRightSpace:4);
+        _rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, kStatusHeight_m+2, 50, 40)];
+        _rightButton.m_right = kScreenW_m - (self.config.itemRightSpace? self.config.itemRightSpace:4);
         [_rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         _rightButton.titleLabel.font = self.config.rightFontSize? self.config.rightFontSize : [UIFont systemFontOfSize:17];
         [self.naviView addSubview:_rightButton];
@@ -150,7 +162,7 @@
     
     _rightView.m_centerY = self.mtitleLabel.m_centerY;
     
-    _rightView.m_right = kScreenW - (self.config.itemRightSpace? self.config.itemRightSpace:4);
+    _rightView.m_right = kScreenW_m - (self.config.itemRightSpace? self.config.itemRightSpace:4);
     
     [self.naviView addSubview:_rightView];
     
@@ -276,9 +288,9 @@
     
     if (_leftButton) {
         
-        if (expectSize.width > kScreenW-4-_leftButton.m_right) {
+        if (expectSize.width > kScreenW_m-4-_leftButton.m_right) {
             
-            self.mtitleLabel.frame = CGRectMake(0, 0, kScreenW-4-_leftButton.m_right, 30);
+            self.mtitleLabel.frame = CGRectMake(0, 0, kScreenW_m-4-_leftButton.m_right, 30);
             
         }else{
             
@@ -288,7 +300,7 @@
         
     }else{
         
-        self.mtitleLabel.frame = CGRectMake(0, 0, kScreenW-8, 30);
+        self.mtitleLabel.frame = CGRectMake(0, 0, kScreenW_m-8, 30);
         
     }
     
