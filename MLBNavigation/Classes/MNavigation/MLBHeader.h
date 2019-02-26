@@ -1,13 +1,12 @@
 //
-//  MHeader.h
-//  MNavigation
+//  MLBHeader.h
+//  Pods
 //
-//  Created by Mac on 2019/1/18.
-//  Copyright © 2019年 MLBiMAC. All rights reserved.
+//  Created by Mac on 2019/2/26.
 //
 
-#ifndef MHeader_h
-#define MHeader_h
+#ifndef MLBHeader_h
+#define MLBHeader_h
 
 /** 屏幕宽高 */
 #define kScreenW    [UIScreen mainScreen].bounds.size.width
@@ -27,4 +26,4 @@
 
 #import "UIView+MLBLayout.h"
 
-#endif /* MHeader_h */
+#endif /* MLBHeader_h */

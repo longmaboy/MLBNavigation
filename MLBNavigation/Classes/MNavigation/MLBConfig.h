@@ -1,17 +1,15 @@
 //
-//  MConfig.h
-//  MNavigation
+//  MLBConfig.h
+//  MLBNavigation
 //
-//  Created by Mac on 2019/1/18.
-//  Copyright © 2019年 MLBiMAC. All rights reserved.
+//  Created by Mac on 2019/2/26.
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MConfig : NSObject
+@interface MLBConfig : NSObject
 
 //左边返回item字体大小
 @property (nonatomic, strong) UIFont *leftFontSize;
@@ -34,7 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,   copy) NSString *naviBgImg;
 
 @property (nonatomic, assign) BOOL lineHidden;
-
 
 @end
 

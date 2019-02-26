@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C37E0A2224CBAC00A70F30 /* MLBConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C37E082224CBAC00A70F30 /* MLBConfig.h */; };
+		04C37E0B2224CBAC00A70F30 /* MLBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E092224CBAC00A70F30 /* MLBConfig.m */; };
+		04C37E0E2224CBE500A70F30 /* MLBConfigSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C37E0C2224CBE500A70F30 /* MLBConfigSingle.h */; };
+		04C37E0F2224CBE500A70F30 /* MLBConfigSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E0D2224CBE500A70F30 /* MLBConfigSingle.m */; };
+		04C37E122224CC2600A70F30 /* MLBBaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C37E102224CC2600A70F30 /* MLBBaseController.h */; };
+		04C37E132224CC2600A70F30 /* MLBBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E112224CC2600A70F30 /* MLBBaseController.m */; };
 		140A2F4C1C4A04C4A0C5E16DA9AB8D0D /* Pods-MLBNavigation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4DEB66AD4309E9B0DED71865892071 /* Pods-MLBNavigation_Tests-dummy.m */; };
 		1A811E476437CCEFE0B3DE7928327481 /* Pods-MLBNavigation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3E6846C01E637D5F433AB07F609D /* Pods-MLBNavigation_Example-dummy.m */; };
 		2CF8E5360C71E1BD41C828E8994B504E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -36,17 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		046B59042223F5610032E801 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		046B59052223F5610032E801 /* UIView+MLBLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MLBLayout.m"; sourceTree = "<group>"; };
-		046B59062223F5610032E801 /* MHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHeader.h; sourceTree = "<group>"; };
-		046B59072223F5610032E801 /* ConfigSingle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigSingle.m; sourceTree = "<group>"; };
-		046B59082223F5610032E801 /* MConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MConfig.h; sourceTree = "<group>"; };
 		046B59092223F5610032E801 /* UIView+MLBLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MLBLayout.h"; sourceTree = "<group>"; };
-		046B590A2223F5610032E801 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		046B590B2223F5610032E801 /* MConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MConfig.m; sourceTree = "<group>"; };
-		046B590C2223F5610032E801 /* ConfigSingle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigSingle.h; sourceTree = "<group>"; };
 		046B590D2223F5610032E801 /* MBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@2x.png"; sourceTree = "<group>"; };
 		046B590E2223F5610032E801 /* MBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBack@3x.png"; sourceTree = "<group>"; };
+		04C37E072224CB4900A70F30 /* MLBHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBHeader.h; sourceTree = "<group>"; };
+		04C37E082224CBAC00A70F30 /* MLBConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBConfig.h; sourceTree = "<group>"; };
+		04C37E092224CBAC00A70F30 /* MLBConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBConfig.m; sourceTree = "<group>"; };
+		04C37E0C2224CBE500A70F30 /* MLBConfigSingle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBConfigSingle.h; sourceTree = "<group>"; };
+		04C37E0D2224CBE500A70F30 /* MLBConfigSingle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBConfigSingle.m; sourceTree = "<group>"; };
+		04C37E102224CC2600A70F30 /* MLBBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBBaseController.h; sourceTree = "<group>"; };
+		04C37E112224CC2600A70F30 /* MLBBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBBaseController.m; sourceTree = "<group>"; };
 		05E42821ACEF6E61DC942AC5D1BBBBF5 /* Pods-MLBNavigation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBNavigation_Tests-resources.sh"; sourceTree = "<group>"; };
 		07F1520CB5754C9F86E77700D41C63CA /* Pods-MLBNavigation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBNavigation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		096C72DA5BE1F8E952A2B3713AE1F323 /* Pods-MLBNavigation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLBNavigation_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -114,13 +120,13 @@
 		046B59032223F5610032E801 /* MNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				046B59062223F5610032E801 /* MHeader.h */,
-				046B59082223F5610032E801 /* MConfig.h */,
-				046B590B2223F5610032E801 /* MConfig.m */,
-				046B590C2223F5610032E801 /* ConfigSingle.h */,
-				046B59072223F5610032E801 /* ConfigSingle.m */,
-				046B590A2223F5610032E801 /* BaseController.h */,
-				046B59042223F5610032E801 /* BaseController.m */,
+				04C37E072224CB4900A70F30 /* MLBHeader.h */,
+				04C37E082224CBAC00A70F30 /* MLBConfig.h */,
+				04C37E092224CBAC00A70F30 /* MLBConfig.m */,
+				04C37E0C2224CBE500A70F30 /* MLBConfigSingle.h */,
+				04C37E0D2224CBE500A70F30 /* MLBConfigSingle.m */,
+				04C37E102224CC2600A70F30 /* MLBBaseController.h */,
+				04C37E112224CC2600A70F30 /* MLBBaseController.m */,
 				046B59092223F5610032E801 /* UIView+MLBLayout.h */,
 				046B59052223F5610032E801 /* UIView+MLBLayout.m */,
 				046B590D2223F5610032E801 /* MBack@2x.png */,
@@ -278,7 +284,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C37E0A2224CBAC00A70F30 /* MLBConfig.h in Headers */,
 				8DB9FB722A410A42ABF018C2CBC40903 /* MLBNavigation-umbrella.h in Headers */,
+				04C37E0E2224CBE500A70F30 /* MLBConfigSingle.h in Headers */,
+				04C37E122224CC2600A70F30 /* MLBBaseController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C37E132224CC2600A70F30 /* MLBBaseController.m in Sources */,
 				3537C13A05988CF1001B8E5EDA6FC943 /* MLBNavigation-dummy.m in Sources */,
+				04C37E0B2224CBAC00A70F30 /* MLBConfig.m in Sources */,
+				04C37E0F2224CBE500A70F30 /* MLBConfigSingle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

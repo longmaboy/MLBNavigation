@@ -1,18 +1,17 @@
 //
-//  BaseController.m
-//  TestNavi
+//  MLBBaseController.m
+//  MLBNavigation
 //
-//  Created by Mac on 2019/1/14.
-//  Copyright © 2019年 MLBiMAC. All rights reserved.
+//  Created by Mac on 2019/2/26.
 //
 
-#import "BaseController.h"
-#import "ConfigSingle.h"
-#import "MConfig.h"
+#import "MLBBaseController.h"
+#import "MLBConfigSingle.h"
+#import "MLBConfig.h"
 
-@interface BaseController ()
+@interface MLBBaseController ()
 
-@property (nonatomic, strong) MConfig *config;
+@property (nonatomic, strong) MLBConfig *config;
 
 @property (nonatomic, strong) UIView *lineView;
 
@@ -26,23 +25,23 @@
 
 @end
 
-@implementation BaseController
+@implementation MLBBaseController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = UIColor.whiteColor;
-
+    
     //存在导航栏才添加
     if (self.navigationController) {
         
         [self.navigationController.navigationBar setHidden:YES];
         
-        self.config = [ConfigSingle single].config;
-
+        self.config = [MLBConfigSingle single].config;
+        
         self.titleString = self.navigationItem.title;
-
-         if (@available(iOS 11.0, *)) {
+        
+        if (@available(iOS 11.0, *)) {
             
             self.additionalSafeAreaInsets = UIEdgeInsetsMake(44, 0, 0, 0);
             
@@ -51,7 +50,7 @@
         [self.view addSubview:self.naviView];
         
     }
-
+    
 }
 
 #pragma mark - creatUI lazy
@@ -146,7 +145,7 @@
     if (_rightButton) {
         
         [_rightButton removeFromSuperview];
-
+        
     }
     
     _rightView.m_centerY = self.mtitleLabel.m_centerY;
@@ -182,7 +181,7 @@
     }else{
         
         self.naviView.hidden = NO;
-
+        
     }
     
     self.naviView.alpha = naviAlpha;
@@ -272,9 +271,9 @@
     self.mtitleLabel.text = titleString;
     
     CGSize maximumLabelSize = CGSizeMake(100, 9999);
-
+    
     CGSize expectSize = [self.mtitleLabel sizeThatFits:maximumLabelSize];
-
+    
     if (_leftButton) {
         
         if (expectSize.width > kScreenW-4-_leftButton.m_right) {
@@ -290,17 +289,17 @@
     }else{
         
         self.mtitleLabel.frame = CGRectMake(0, 0, kScreenW-8, 30);
-
+        
     }
     
     self.mtitleLabel.m_centerX = self.naviView.m_centerX;
-
+    
     if (_leftButton) {
         
         if (self.mtitleLabel.m_x < _leftButton.m_right) {
             
             self.mtitleLabel.m_x = _leftButton.m_right;
-
+            
         }
         
     }
@@ -308,7 +307,7 @@
     self.mtitleLabel.m_centerY = self.leftButton.m_centerY;
     
     [self.naviView addSubview:self.mtitleLabel];
-        
+    
 }
 
 //控制器标题字体大小
@@ -392,7 +391,7 @@
     if (rightItemText.length > 0) {
         
         [self.rightButton setTitle:rightItemText forState:UIControlStateNormal];
-
+        
     }
     
     if (color) {
@@ -416,7 +415,7 @@
     }
     
     [self.rightButton setTitle:@"" forState:UIControlStateNormal];
-
+    
     if (rightImg) {
         
         [self.rightButton setImage:rightImg forState:UIControlStateNormal];
@@ -495,7 +494,7 @@
 - (void)leftButtonAction:(UIButton *)sender
 {
     if (self.navigationController.childViewControllers.count > 1) {
-
+        
         [self.navigationController popViewControllerAnimated:YES];
         
     }
@@ -503,11 +502,10 @@
 //right
 - (void)rightButtonAction:(UIButton *)sender
 {
-
+    
 }
 
 
 #pragma mark - data
-
 
 @end

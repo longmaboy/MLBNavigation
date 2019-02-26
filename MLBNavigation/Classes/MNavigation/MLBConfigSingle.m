@@ -1,18 +1,17 @@
 //
-//  ConfigSingle.m
+//  MLBConfigSingle.m
 //  MLBNavigation
 //
-//  Created by Mac on 2019/2/25.
-//  Copyright © 2019年 MLBiMAC. All rights reserved.
+//  Created by Mac on 2019/2/26.
 //
 
-#import "ConfigSingle.h"
+#import "MLBConfigSingle.h"
 
-@implementation ConfigSingle
+@implementation MLBConfigSingle
 
 static id shared = nil;
 
-+ (ConfigSingle *)single
++ (MLBConfigSingle *)single
 {
     static dispatch_once_t onceToken;
     

@@ -1,18 +1,18 @@
 //
-//  BaseController.h
-//  TestNavi
+//  MLBBaseController.h
+//  MLBNavigation
 //
-//  Created by Mac on 2019/1/14.
-//  Copyright © 2019年 MLBiMAC. All rights reserved.
+//  Created by Mac on 2019/2/26.
 //
 
 #import <UIKit/UIKit.h>
-#import "MHeader.h"
+#import "MLBHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseController : UIViewController
+@interface MLBBaseController : UIViewController
 
+//导航栏view，布局的时候要从它开始，注意它不要被覆盖了
 @property (nonatomic, strong) UIView *naviView;
 
 //隐藏导航栏
