@@ -5,23 +5,22 @@
 [![License](https://img.shields.io/cocoapods/l/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)
 [![Platform](https://img.shields.io/cocoapods/p/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)
 
-## Example
+## Installation 安装
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-MLBNavigation is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+1.下载demo，将MLBNavigation拖入项目中即可，或者cocopods安装
+2.支持cocopods安装，pod search MLBNavigation 搜索不到，请先更新pod setup
 
 ```ruby
 pod 'MLBNavigation'
 ```
 
+## Usage method 使用方法
+
+创建UIViewController的时候，直接继承MLBBaseController.h即可，详情可看demo
+
 ## Author
 
+使用过程中有任何问题，请issue我或者给我发邮件
 751824643@qq.com
 
 ## License
