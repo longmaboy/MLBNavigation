@@ -1,0 +1,16 @@
+PODS:
+  - MLBNavigation (0.1.2)
+
+DEPENDENCIES:
+  - MLBNavigation
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MLBNavigation
+
+SPEC CHECKSUMS:
+  MLBNavigation: 9eff871de5ae7a178abf6b54e9ef0600384e6a94
+
+PODFILE CHECKSUM: e13c29fd3e3165ac7455a0718785bfa6b8a19d20
+
+COCOAPODS: 1.5.3
