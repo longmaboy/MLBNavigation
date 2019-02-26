@@ -1,32 +1,41 @@
 //
-//  CameraController.m
-//  TestNavi
+//  Camera1Controller.m
+//  MLBNavigationDemo
 //
-//  Created by Mac on 2019/1/14.
+//  Created by Mac on 2019/2/26.
 //  Copyright © 2019年 MLBiMAC. All rights reserved.
 //
 
-#import "CameraController.h"
 #import "Camera1Controller.h"
+#import "Camera2Controller.h"
 
-@interface CameraController ()<UITableViewDelegate,UITableViewDataSource>
+@interface Camera1Controller ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation CameraController
+@implementation Camera1Controller
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.titleString = @"客户列表";
-
+    self.titleString = @"Camera1Controller";
+    
+    [self setRightItemText:@"历史注记" withTextColor:UIColor.greenColor withWidth:85];
+    
     self.naviBgColor = RGB(20, 182, 200, 1);
     
     [self.tableView reloadData];
     
+}
+
+//重写rightButtonAction方法
+- (void)rightButtonAction:(UIButton *)sender
+{
+    Camera2Controller *camera = [[Camera2Controller alloc] init];
+    [self.navigationController pushViewController:camera animated:YES];
 }
 
 - (UITableView *)tableView
@@ -53,7 +62,7 @@
 #pragma mark - delegateMethod
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 20;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,7 +89,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     //    [self presentViewController:[Camera2Controller new] animated:YES completion:nil];
-    [self.navigationController pushViewController:[Camera1Controller new] animated:YES];
+    //    [self.navigationController pushViewController:[Camera2Controller new] animated:YES];
     
 }
 #pragma mark - setter

@@ -23,6 +23,8 @@
 		04C37E6B2224DD9900A70F30 /* PersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E6A2224DD9900A70F30 /* PersonController.m */; };
 		04C37E772224DDA000A70F30 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E712224DDA000A70F30 /* CameraController.m */; };
 		04C37E7B2224DE2100A70F30 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E7A2224DE2100A70F30 /* BaseController.m */; };
+		04C37E7E22250F1F00A70F30 /* Camera1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37E7D22250F1F00A70F30 /* Camera1Controller.m */; };
+		04D861F52225154800E435B5 /* Camera2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D861F42225154800E435B5 /* Camera2Controller.m */; };
 		FF1A3106F5725056B1A9776C /* libPods-MLBNavigationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FDCA459B770EB4683D89B9 /* libPods-MLBNavigationDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,10 @@
 		04C37E712224DDA000A70F30 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
 		04C37E792224DE2100A70F30 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		04C37E7A2224DE2100A70F30 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		04C37E7C22250F1F00A70F30 /* Camera1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera1Controller.h; sourceTree = "<group>"; };
+		04C37E7D22250F1F00A70F30 /* Camera1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera1Controller.m; sourceTree = "<group>"; };
+		04D861F32225154800E435B5 /* Camera2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera2Controller.h; sourceTree = "<group>"; };
+		04D861F42225154800E435B5 /* Camera2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera2Controller.m; sourceTree = "<group>"; };
 		1D9EECF80E4D079E3B5161B7 /* Pods-MLBNavigationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBNavigationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLBNavigationDemo/Pods-MLBNavigationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		64FDCA459B770EB4683D89B9 /* libPods-MLBNavigationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLBNavigationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09377BA6A3C0FB1BE0D45F0 /* Pods-MLBNavigationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBNavigationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBNavigationDemo/Pods-MLBNavigationDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +213,10 @@
 			children = (
 				04C37E6D2224DDA000A70F30 /* CameraController.h */,
 				04C37E712224DDA000A70F30 /* CameraController.m */,
+				04C37E7C22250F1F00A70F30 /* Camera1Controller.h */,
+				04C37E7D22250F1F00A70F30 /* Camera1Controller.m */,
+				04D861F32225154800E435B5 /* Camera2Controller.h */,
+				04D861F42225154800E435B5 /* Camera2Controller.m */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -380,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C37E7E22250F1F00A70F30 /* Camera1Controller.m in Sources */,
 				04C37E672224DD9000A70F30 /* NextController.m in Sources */,
 				04C37E7B2224DE2100A70F30 /* BaseController.m in Sources */,
 				04C37E6B2224DD9900A70F30 /* PersonController.m in Sources */,
@@ -390,6 +401,7 @@
 				04C37E662224DD9000A70F30 /* YellowViewController.m in Sources */,
 				04C37E642224DD9000A70F30 /* HomeDetailController.m in Sources */,
 				04C37E322224DC4C00A70F30 /* main.m in Sources */,
+				04D861F52225154800E435B5 /* Camera2Controller.m in Sources */,
 				04C37E242224DC4900A70F30 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

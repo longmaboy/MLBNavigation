@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseController : MLBBaseController
 
+/**
+ 说明：最好是像这样，新建一个基类继承我的MLBBaseController
+ 这样在这个基类中还能做你想做的事情
+ */
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -157,7 +157,7 @@
     if (_rightButton) {
         
         [_rightButton removeFromSuperview];
-        
+        _rightButton = nil;
     }
     
     _rightView.m_centerY = self.mtitleLabel.m_centerY;
@@ -386,6 +386,8 @@
         
         self.leftButton.m_width = buttonWidth;
         
+        self.leftButton.m_left = self.config.itemLeftSpace ? self.config.itemLeftSpace : 10;
+        
     }
     
     
@@ -396,6 +398,12 @@
 {
     if (!self.navigationController) {
         return;
+    }
+    
+    if (_rightButton) {
+        
+        [_rightButton removeFromSuperview];
+        _rightButton = nil;
     }
     
     [self.rightButton setImage:nil forState:UIControlStateNormal];
@@ -416,6 +424,8 @@
         
         self.rightButton.m_width = buttonWidth;
         
+        self.rightButton.m_right = self.view.m_right-(self.config.itemRightSpace ? self.config.itemRightSpace : 10);
+        
     }
 }
 
@@ -424,6 +434,14 @@
 {
     if (!self.navigationController) {
         return;
+    }
+    
+    if (_rightButton) {
+        
+        [_rightButton removeFromSuperview];
+        
+        _rightButton = nil;
+        
     }
     
     [self.rightButton setTitle:@"" forState:UIControlStateNormal];
@@ -493,10 +511,16 @@
         return;
     }
     
+    if (!_rightButton) {
+        return;
+    }
+    
     if (itemRightSpace > 0) {
         
         _itemRightSpace = itemRightSpace;
         
+        self.rightButton.m_right = kScreenW_m - itemRightSpace;
+
     }
     
 }

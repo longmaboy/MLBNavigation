@@ -147,18 +147,21 @@
 
 - (void)setRightView:(UIView *)rightView
 {
-    
-    if (_rightView) {
+    if (!self.navigationController) {
         return;
     }
-    
-    _rightView = rightView;
+    if (_rightView) {
+        [_rightView removeFromSuperview];
+        _rightView = nil;
+    }
     
     if (_rightButton) {
         
         [_rightButton removeFromSuperview];
         
     }
+    
+    _rightView = rightView;
     
     _rightView.m_centerY = self.mtitleLabel.m_centerY;
     
@@ -263,10 +266,21 @@
         return;
     }
     
+    if (_titleView) {
+        [_titleView removeFromSuperview];
+        _titleView = nil;
+    }
+    
+    _titleView = titleView;
+    
     [self.naviView addSubview:titleView];
+    
     titleView.m_centerY = self.leftButton.m_centerY;
+    
     titleView.m_centerX = self.naviView.m_centerX;
+    
 }
+
 //设置控制器title
 - (void)setTitleString:(NSString *)titleString
 {
@@ -329,6 +343,10 @@
         return;
     }
     
+    if (!_mtitleLabel) {
+        return;
+    }
+    
     if (titleFontSize) {
         
         _titleFontSize = titleFontSize;
@@ -341,6 +359,10 @@
 - (void)setTitleColor:(UIColor *)titleColor
 {
     if (!self.navigationController) {
+        return;
+    }
+    
+    if (!_mtitleLabel) {
         return;
     }
     
@@ -386,6 +408,8 @@
         
         self.leftButton.m_width = buttonWidth;
         
+        self.leftButton.m_left = self.config.itemLeftSpace ? self.config.itemLeftSpace : 10;
+        
     }
     
     
@@ -415,6 +439,8 @@
     if (buttonWidth > 0) {
         
         self.rightButton.m_width = buttonWidth;
+        
+        self.rightButton.m_right = self.view.m_right-(self.config.itemRightSpace ? self.config.itemRightSpace : 10);
         
     }
 }
