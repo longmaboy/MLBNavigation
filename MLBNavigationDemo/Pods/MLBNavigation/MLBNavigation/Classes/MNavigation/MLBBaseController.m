@@ -130,6 +130,10 @@
         [_rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         _rightButton.titleLabel.font = self.config.rightFontSize? self.config.rightFontSize : [UIFont systemFontOfSize:17];
         [self.naviView addSubview:_rightButton];
+        if (_rightView) {
+            [_rightView removeFromSuperview];
+            _rightView = nil;
+        }
     }
     return _rightButton;
 }
@@ -523,6 +527,17 @@
         
         _itemRightSpace = itemRightSpace;
         
+        if (_rightView) {
+            
+            _rightView.m_right = kScreenW_m - itemRightSpace;
+
+        }
+        
+        if (_rightButton) {
+            
+            _rightButton.m_right = kScreenW_m - itemRightSpace;
+
+        }
     }
     
 }

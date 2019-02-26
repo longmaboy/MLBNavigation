@@ -1,5 +1,5 @@
 PODS:
-  - MLBNavigation (0.1.3)
+  - MLBNavigation (0.1.4)
 
 DEPENDENCIES:
   - MLBNavigation
@@ -9,7 +9,7 @@ SPEC REPOS:
     - MLBNavigation
 
 SPEC CHECKSUMS:
-  MLBNavigation: 200af31a1497c9b2f4ddfe391c0bd5cb698161d4
+  MLBNavigation: 210463b7dccd94ad206674dacf4e850fb23e396b
 
 PODFILE CHECKSUM: db08b685b2be30bb38b760c669b912051a1473c2
 
