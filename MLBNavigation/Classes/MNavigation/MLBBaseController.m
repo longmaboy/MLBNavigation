@@ -167,8 +167,8 @@
     
     _rightView = rightView;
     
-    _rightView.m_centerY = self.mtitleLabel.m_centerY;
-    
+    _rightView.m_centerY = kStatusHeight_m + 44/2;
+
     _rightView.m_right = kScreenW_m - (self.config.itemRightSpace? self.config.itemRightSpace:4);
     
     [self.naviView addSubview:_rightView];
@@ -279,7 +279,7 @@
     
     [self.naviView addSubview:titleView];
     
-    titleView.m_centerY = self.leftButton.m_centerY;
+    titleView.m_centerY = kStatusHeight_m + 44/2;
     
     titleView.m_centerX = self.naviView.m_centerX;
     
@@ -334,7 +334,7 @@
         
     }
     
-    self.mtitleLabel.m_centerY = self.leftButton.m_centerY;
+    self.mtitleLabel.m_centerY = kStatusHeight_m + 44/2;
     
     [self.naviView addSubview:self.mtitleLabel];
     
@@ -478,7 +478,7 @@
         return;
     }
     
-    if (itemLeftSpace > 0) {
+    if (itemLeftSpace >= 0) {
         
         _itemLeftSpace = itemLeftSpace;
         
@@ -523,7 +523,7 @@
         return;
     }
     
-    if (itemRightSpace > 0) {
+    if (itemRightSpace >= 0) {
         
         _itemRightSpace = itemRightSpace;
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048AB12922290C9700C1090A /* 111.gif in Resources */ = {isa = PBXBuildFile; fileRef = 048AB12822290C9700C1090A /* 111.gif */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0386469D0451BFE702428569 /* Pods-MLBNavigation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBNavigation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLBNavigation_Example/Pods-MLBNavigation_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		048AB12822290C9700C1090A /* 111.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 111.gif; sourceTree = "<group>"; };
 		2DC015980E1413180B07AB7D /* Pods-MLBNavigation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBNavigation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBNavigation_Example/Pods-MLBNavigation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5A65ECD451E10EF9B8F1D9F5 /* Pods-MLBNavigation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBNavigation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBNavigation_Tests/Pods-MLBNavigation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MLBNavigation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBNavigation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				048AB12822290C9700C1090A /* 111.gif */,
 				F2C5F05B5FF20DC32366E6C8 /* MLBNavigation.podspec */,
 				D64A85435D6DF888297F2F8E /* README.md */,
 				8759D24025EDC1C54E508C78 /* LICENSE */,
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048AB12922290C9700C1090A /* 111.gif in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
