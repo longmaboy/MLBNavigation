@@ -2,7 +2,10 @@
 
 [![Version](https://img.shields.io/cocoapods/v/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)
 [![License](https://img.shields.io/cocoapods/l/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)
-[![Platform](https://img.shields.io/cocoapods/p/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)
+[![Platform](https://img.shields.io/cocoapods/p/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)  
+
+为什么要做这个？  
+平时使用原生导航栏，处理返回手势的时候，自己做不到像QQ那样处理的很完美，所以做这个，很简单，没什么技术难点，需要的参考，大神绕道。
 
 ## 示例
 
