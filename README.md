@@ -20,7 +20,8 @@ pod 'MLBNavigation'
 ## 使用方法
 
 支持StoryBoard和纯代码使用  
-创建UIViewController的时候，直接继承MLBBaseController.h即可，详情可看demo
+创建UIViewController的时候，直接继承MLBBaseController.h即可，详情可看demo  
+最好是自己创建一个BaseController继承我的的MLBBaseController，然后BaseController还可以做你想做的事情
 
 ## 注意事项
 因为原生导航栏被隐藏了，所以原生导航栏上的功能不能再使用，需要自己去实现  
