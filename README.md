@@ -27,10 +27,58 @@ pod 'MLBNavigation'
 最好是自己创建一个BaseController继承我的的MLBBaseController，然后BaseController还可以做你想做的事情  
 若是你的导航栏很复杂，那直接隐藏导航栏，自己做一个导航栏就好。
 
+需要做一些基础配置，不配置就使用我默认的  
+在AppDelegate.h中导入#import "MLBNavigation.h"设置初始化配置
+
+```ruby
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    MLBConfig *config = [[MLBConfig alloc] init];
+
+    config.leftItemImg = @"MBack";
+    config.titleFontSize = [UIFont systemFontOfSize:18];
+    config.itemLeftSpace = 10;
+    config.itemRightSpace = 20;
+
+    [MLBConfigSingle single].config = config;
+
+    return YES;
+}
+
+MLBConfig.h
+
+@interface MLBConfig : NSObject
+
+//左边返回item字体大小
+@property (nonatomic, strong) UIFont *leftFontSize;
+
+//控制器标题字体大小
+@property (nonatomic, strong) UIFont *titleFontSize;
+
+//右边item字体大小
+@property (nonatomic, strong) UIFont *rightFontSize;
+
+@property (nonatomic,   copy) NSString *leftItemImg;
+
+@property (nonatomic, assign) CGFloat itemLeftSpace;
+
+//最右边item右边距离
+@property (nonatomic, assign) CGFloat itemRightSpace;
+
+@property (nonatomic, strong) UIColor *naviBgColor;
+
+@property (nonatomic,   copy) NSString *naviBgImg;
+
+@property (nonatomic, assign) BOOL lineHidden;
+
+@end
+```
+
 ## 注意事项
 因为原生导航栏被隐藏了，所以原生导航栏上的功能不能再使用，需要自己去实现  
 1、prefersLargeTitles大标题功能没法使用  
-2、UISearchController
+2、UISearchController没法在导航栏上使用
  
 ## Author
 
