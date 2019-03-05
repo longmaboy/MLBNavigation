@@ -26,7 +26,10 @@
     config.itemLeftSpace = 10;
     config.itemRightSpace = 20;
     
-    [MLBConfigSingle single].config = config;
+//    [MLBConfigSingle single].config = config;
+    
+    self.window.rootViewController = [[TabbarController alloc] init];
+
 
     return YES;
 }
