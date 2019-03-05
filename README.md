@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MLBNavigation.svg?style=flat)](https://cocoapods.org/pods/MLBNavigation)  
 
 为什么要做这个？  
-平时使用原生导航栏，处理返回手势的时候，自己做不到像QQ那样处理的很完美，所以做这个，很简单，需要的参考，大神绕道。
+平时使用原生导航栏，处理返回手势的时候，自己做不到像QQ那样处理的很完美，虽然有很多大大写的有不错的框架，个人感觉有些框架太繁重，并且还是不能满足一些要求，所以做这个，很简单，需要的参考，大神绕道。
 
 ## 示例
 
