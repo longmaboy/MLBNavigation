@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 //左边返回item字体大小
 @property (nonatomic, strong) UIFont *leftFontSize;
-
 //控制器标题字体大小
 @property (nonatomic, strong) UIFont *titleFontSize;
+//控制器标题字体颜色
+@property (nonatomic, strong) UIColor *titleColor;
+
 
 //右边item字体大小
 @property (nonatomic, strong) UIFont *rightFontSize;
@@ -23,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,   copy) NSString *leftItemImg;
 
 @property (nonatomic, assign) CGFloat itemLeftSpace;
+
 
 //最右边item右边距离
 @property (nonatomic, assign) CGFloat itemRightSpace;

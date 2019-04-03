@@ -145,6 +145,7 @@
         _mtitleLabel = [[UILabel alloc] init];
         _mtitleLabel.textAlignment = NSTextAlignmentCenter;
         _mtitleLabel.font = self.config.titleFontSize? self.config.titleFontSize : [UIFont systemFontOfSize:17];
+        _mtitleLabel.textColor = self.config.titleColor? self.config.titleColor : UIColor.blackColor;
     }
     return _mtitleLabel;
 }
@@ -294,6 +295,13 @@
     
     if (titleString.length < 1) {
         return;
+    }
+    
+    //设置title先添加导航栏
+    if (self.navigationController.childViewControllers.count > 1) {
+        
+        [self naviView];
+        
     }
     
     _titleString = titleString;
